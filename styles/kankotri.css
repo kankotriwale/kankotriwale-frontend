@@ -327,7 +327,7 @@
 
 .love_story .slab{
     height: auto;
-    width: 80%;
+    width: 60%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -360,8 +360,8 @@
     font-size: 0.8rem;
 }
 .love_story .slab .right{
-    height: 10rem;
-    width: 12rem;
+    height: 13rem;
+    width: 13rem;
     position: relative;
     background-image:  linear-gradient(to left, #F8827A 70%, #fff 30%);
 }
@@ -623,12 +623,44 @@
 /*=======================================================================================================
                                         photo gallery  
  =====================================================================================================*/
+/* .gallery{
+    padding-top: 2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+} */
 .gallery{
     padding-top: 2rem;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction: column;
+}
+.gallery .all-btn {
+    background: #FF8780;
+    padding: 8px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 0;
+    margin: 30px auto 50px;
+}
+@media (max-width:768px) {
+    .gallery .all-btn {
+        margin: -10px auto 30px;
+    }
+}
+.carousel-control-next,.carousel-control-prev {
+    display: none;
+}
+.gallery span img{
+    object-fit: cover;
+    margin-bottom: 22px!important;
 }
  /*=======================================================================================================
                                         photo gallery media query  

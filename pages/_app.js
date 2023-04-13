@@ -7,11 +7,10 @@ import Footer from "../components/Footer";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <Component {...pageProps} />
       </main>
-      <Footer />
     </>
   );
 }

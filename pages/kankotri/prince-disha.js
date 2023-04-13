@@ -150,7 +150,7 @@ export default function princeDisha() {
 {/* ===================================================================================================
                                        Photo Gallary Section
 =================================================================================================== */}
-
+{/* 
       <section className='gallery'>
         <h3 className='style_heading'>Photo Gallery</h3>
       <Carousel className='mt-3 mb-3 p-2'>
@@ -239,7 +239,187 @@ export default function princeDisha() {
         />
       </Carousel.Item>
     </Carousel>
-    </section>
+    </section> */}
+    <section className='gallery mt-5'>
+        <h3 className='style_heading'>Photo Gallery</h3>
+        <Carousel className='mt-3 mb-3 p-2 d-block d-md-none'>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-1.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-2.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-3.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-4.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-5.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-6.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-7.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-8.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-9.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-10.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-11.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image height={600} width={600}
+              className="d-block w-100"
+              src="/Gallary-pic-12.png"
+              alt="Gallary Img"
+            />
+          </Carousel.Item>
+        </Carousel>
+        <div className='container mt-5 d-none d-md-block'>
+          <div className='row'>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-1.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-2.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-3.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-4.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-5.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-6.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-7.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-8.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-9.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-10.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-11.png"
+                alt="Gallary Img"
+              />
+            </div>
+            <div className='col-12 col-md-3'>
+              <Image height={600} width={600}
+                className="d-block w-100"
+                src="/Gallary-pic-12.png"
+                alt="Gallary Img"
+              />
+            </div>
+          </div>
+        </div>
+        <div className='d-flex justify-content-center'>
+          <button className='all-btn'>View All Photos</button>
+        </div>
+      </section>
 {/* ===================================================================================================
                                        Footer Section
 =================================================================================================== */}

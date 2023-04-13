@@ -3,10 +3,13 @@ import Image from "next/image";
 import React from "react";
 import { Carousel, Col, Container, Row } from "react-bootstrap";
 import AppTabs from "../components/AppTabs";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function index() {
   return (
     <div>
+        <Header />
       <section className="first-sec">
         <div className="d-block d-md-flex justify-content-end align-items-center">
           <div className="first__info">
@@ -591,6 +594,8 @@ export default function index() {
           </Carousel>
         </div>
       </section>
+      <Footer />
+
     </div>
   );
 }
