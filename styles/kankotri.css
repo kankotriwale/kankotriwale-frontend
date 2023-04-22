@@ -661,8 +661,28 @@
         margin: -10px auto 30px;
     }
 }
-.carousel-control-next,.carousel-control-prev {
-    display: none;
+.gallery .carousel-control-next,.gallery .carousel-control-prev {
+   
+    background-color: #ff8780;
+}
+.gallery .carousel-control-prev{
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translateX(0);
+    justify-content: center;
+    top: 50%;
+}
+.gallery .carousel-control-next{
+    right: 10px;
+    left: unset;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translateX(0);
+    justify-content: center;
+    top: 50%;
 }
 .gallery span img{
     object-fit: cover;
