@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+// font-family: 'Inter', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+// font-family: 'Rajdhani', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Kameron&display=swap');
+// font-family: 'Kameron', serif;
+
+
+
+
+// =====================================================================================================
+//                                 Heading Component
+// =====================================================================================================
+.Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .heading_top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .decoration{
+            position: relative;
+            height: 50px;
+            width: 50px;
+        }
+
+        .heading_text{
+            h2{
+                font-family: 'Kameron';
+                font-weight: 400;
+                font-size: 50px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+    .bottom_decoration{
+        position: relative;
+        width: calc(100% - 100px);
+        max-width: 250px;
+        height: 10px;
+    }
+}
+@media (max-width: 750px) {
+    .Heading .heading_top .heading_text h2{
+        font-size: 40px;
+    }
+}
+@media (max-width: 460px) {
+    .Heading .heading_top .heading_text h2{
+        font-size: 30px;
+    }
+}
+
+// =====================================================================================================
+//                                 Kankotri Page - 3
+// =====================================================================================================
+.kankotri_p3{
+    height: auto;
+    width: 100%;
+    min-width: 350px;
+
+    h1,h2,h3,h4,h5,h6,a,p,li{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+
+// =====================================================================================================
+//                                 LANDING
+// =====================================================================================================
+    .kp3_landing{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: #DFF3F3;
+
+        background-image: url("../public/kankotri-p3-assets/landing-bg-2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80% 100% ;
+        
+        position: relative;
+
+        h1{
+            width: 100%;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: #DFF3F3;
+            text-align: center;
+            font-family: 'Imprint MT Shadow';
+            font-weight: 400;
+            font-size: 80px;
+            color: #057FB1;
+        }
+        .kp3_landing_img_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        
+            position: relative;
+            z-index: 1;
+            padding: 0 30px;
+
+            .kp3_landing_date{
+                display: grid;
+                place-items: center;
+                background-color: #fff;
+
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                
+                h2{
+                    padding: 12px 40px;
+                    font-family: 'Gugi';
+                    font-weight: 400;
+                    font-size: 26px;
+                    letter-spacing: 0.2em;
+                    color: #8A9B45;
+                }
+            }
+        }
+    }
+    .kp3_landing::before{
+        content: '';
+        position: absolute;
+
+        width: 100%;
+        height: 30%;
+        background-color: #CAE7E8;
+        
+        background-image: url("../public/kankotri-p3-assets/landing-bg-1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+    @media (max-width: 750px) {
+        .kp3_landing{
+            h1{
+                font-size: 60px;
+            }
+            .kp3_landing_img_container .kp3_landing_date h2{
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width: 540px) {
+        .kp3_landing h1{
+            font-size: 50px;
+        }
+        .kp3_landing .kp3_landing_img_container .kp3_landing_date h2{
+            padding: 10px 25px;
+        }
+        .kp3_landing{
+            background-size: 100% 100%;
+        }
+        .kp3_landing::before{
+            background-image: none;
+            background-color: transparent;
+        }
+    }
+    @media (max-width: 430px) {
+        .kp3_landing h1{
+            font-size: 50px;
+        }
+        .kp3_landing .kp3_landing_img_container .kp3_landing_date h2{
+            font-size: 12px;
+        }
+    }
+
+
+
+
+// =====================================================================================================
+//                                 ABOUT INFORMATION
+// =====================================================================================================
+    .kp3_about_information{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+
+        .kp3_card_container{
+            height: auto;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            
+            .kp3_groom_card_container{    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .kp3_groom_card{
+                    height: 650px;
+                    
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .kp3_card_data{                     
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        background-image: url("../public/kankotri-p3-assets/groom-bride-bg.png");
+                        background-size: 100% 100%;
+
+                        position: relative;
+                        padding: 45px 75px;
+
+                        .kp3_card_img{
+                            position: absolute;
+                            top: -260px;
+                            height: 350px;
+                            width: 350px;
+                        }
+
+                        .kp3_card_data_title{
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            z-index: 1;
+
+                            h3{
+                                padding: 15px 45px;
+                                font-family: 'Gugi';
+                                font-weight: 400;
+                                font-size: 24px;
+                                letter-spacing: 0.2em;
+                                color: #8A9B45;
+                            }
+                        }   
+                        h2{
+                            font-family: 'Kameron';
+                            font-weight: 400;
+                            font-size: 54px;
+                            color: #057FB1;
+                        }
+                        p{
+                            font-family: 'Rajdhani';
+                            font-weight: 500;
+                            font-size: 20px;
+                            text-align: center;
+                            color: #432D2D;
+                        }
+                    }
+
+                    @media (max-width: 1180px) {
+                        .kp3_card_data{
+                            padding: 45px 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1080px) {
+        .kp3_about_information .kp3_card_container{
+            flex-direction: column;
+            
+            .kp3_groom_card_container{
+                width: 100%;
+
+                .kp3_groom_card{
+                    width: 100%;
+                    
+                    .kp3_card_data{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 690px) {
+        .kp3_about_information .kp3_card_container{
+            .kp3_groom_card_container{
+                .kp3_groom_card{
+                    .kp3_card_data{
+                        width: 100%;
+                    }
+                }
+            }
+        }        
+    }
+    @media (max-width: 590px) {
+        .kp3_about_information .kp3_card_container{
+
+            .kp3_groom_card_container{
+                .kp3_groom_card{
+                    height: 600px;
+                    .kp3_card_data{
+                        
+                        .kp3_card_data_title{
+                            h3{
+                                font-size: 20px;
+                            }
+                        }   
+
+                        h2{
+                            font-size: 44px;
+                        }
+                        p{
+                            font-size: 18px;
+                        }
+
+                        .kp3_card_img{
+                            height: 300px;
+                            width: 300px;
+                            top: -225px;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+    @media (max-width: 480px) {
+        .kp3_about_information .kp3_card_container{
+            gap: 0;
+            .kp3_groom_card_container{
+                .kp3_groom_card{
+                    height: 620px;
+
+                    .kp3_card_data{
+                        padding: 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 385px) {
+        .kp3_about_information .kp3_card_container{
+            .kp3_groom_card_container{
+                .kp3_groom_card{
+                    height: 650px;
+                    .kp3_card_data{
+                        .kp3_card_data_title h3{
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+// =====================================================================================================
+//                                 OUR LOVE STORY
+// =====================================================================================================
+    .kp3_our_love_story{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        
+        padding: 45px;
+        
+        .kp3_ls_data{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+
+            .kpd_data_nav{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                flex-wrap: wrap;
+                li{
+                    font-family: 'Kameron';
+                    font-weight: 400;
+                    font-size: 24px;
+                    color: #000000;
+                    opacity: 0.3;
+                    cursor: pointer;
+                }
+                li.active{
+                    opacity: 1;
+                }
+            }
+        }
+
+        .kp3_card_data{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            width: 100%;
+            max-width: 1020px;
+            height: 100%;
+                        
+            box-shadow: 0px 11px 54px rgba(0, 0, 0, 0.07);
+
+            display: none;
+
+            .kp3_card_left{
+                height: 260px;
+                width: 500px;
+                position: relative;
+            }
+            .kp3_card_right{
+                height: 260px;
+                width: calc(100% - 400px);
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 10px;
+
+                background-image: url("../public/kankotri-p3-assets/our-love-story-bg.png");
+                background-position: right;
+                background-size: 50% 100%;
+                background-repeat: no-repeat;
+
+                h3{
+                    font-family: 'Kameron';
+                    font-weight: 400;
+                    font-size: 44px;
+                    color: #057FB1;
+                }
+                h6{
+                    font-family: 'Kameron';
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #8A9B45;
+                }
+                p{
+                    max-width: 500px;
+                    font-family: 'Rajdhani';
+                    font-weight: 500;
+                    padding-right: 100px;
+                    font-size: 18px;
+                    color: #432D2D;
+                }
+            }
+        }
+
+        .kp3_card_data.active{
+            display: flex;
+        }
+
+        .kp3_card_indiactor{
+            display: flex;
+            gap: 20px;
+            .indicator{
+                height: 10px;
+                width: 10px;
+                background-color: #000;
+                opacity: 0.3;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .indicator.active{
+                background-color: #057FB1;
+                opacity: 1;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        .kp3_our_love_story{
+            .kp3_card_data{
+                width: 500px;
+                flex-direction: column;
+
+                .kp3_card_left{
+                    height: 300px;
+                }
+                .kp3_card_right{
+                    width: 100%;
+                    padding: 35px;
+
+                    p{
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 670px) {
+        .kp3_our_love_story{
+            .kp3_ls_data{
+                .kpd_data_nav{
+                    flex-direction: column;
+                }
+            }
+            .kp3_card_data{
+                width: 400px;
+
+                .kp3_card_left{
+                    width: 400px;
+                    height: 260px;
+                }
+            }
+        }
+    } 
+    @media (max-width: 445px) {
+        .kp3_our_love_story{
+            .kp3_card_data{
+                width: 300px;
+
+                .kp3_card_left{
+                    width: 300px;
+                    height: 220px;
+                }
+                
+                .kp3_card_right{
+
+                    h3{
+                        font-size: 34px;
+                    }
+                    h6{
+                        font-size: 15px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+
+                }
+            }
+        }
+    }
+// =====================================================================================================
+//                                 FAMILY MEMBERS
+// =====================================================================================================
+    .kp3_family_members{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+        padding: 45px 0;
+
+        .kp3_fm_title{
+            padding: 0 45px;
+        }
+        
+        .kp3_fm_container{
+            width: 100%;
+            background-image: url("../public/kankotri-p3-assets/family-members-bg.png");
+            background-size: 100% 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .bride_fm_container{
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .bride_fm{
+                width: 100%;
+                max-width: 700px;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+    
+                .fm_container_heading{
+                    background-color: #057FB1;
+                    height: 50px;
+                    width: 200px;
+                    display: grid;
+                    place-items: center;
+    
+                    h3{
+                        font-family: 'Gugi';
+                        font-weight: 400;
+                        font-size: 24px;
+                        letter-spacing: 0.2em;
+                        color: #FFFFFF;
+                    }
+                }
+    
+                .kp3_fm{
+                    padding: 10px;
+                    width: 100%;
+    
+                    display: flex;
+                    gap: 25px;
+                    
+                    background-color: #F9F7F5;
+    
+                    .fm_img{
+                        height: 130px;
+                        width: 130px;
+                        position: relative;
+                    }
+                    .fm_data{
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        h4{
+                            font-family: 'Rajdhani';
+                            font-weight: 500;
+                            font-size: 20px;
+                            color: #432D2D;
+                            text-align: center;
+                        }
+                        p{
+                            font-family: 'Rajdhani';
+                            font-weight: 600;
+                            font-size: 18px;
+                            color: #8A9B45;
+                            text-align: center;
+                        }
+                    }
+                }
+            }    
+        }        
+    }
+    @media (max-width: 1315px) {
+        .kp3_family_members{
+            .kp3_fm_container{
+                width: 100%;
+                background-image: none;
+                flex-direction: column;
+                
+                .bride_fm_container{
+                    width: 100%;
+                    background-image: url("../public/kankotri-p3-assets/family-members-bg.png");
+                    background-size: 100% 60%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 0 100px;
+                }
+                .bride_fm{
+                    max-width: 650px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 670px) {
+        .kp3_family_members .kp3_fm_container .bride_fm_container{
+            background-size: 100% 20%;
+            background-repeat: repeat;
+
+            .bride_fm .kp3_fm{
+                flex-direction: column;
+                align-items: center;
+                width: 250px;
+    
+                .fm_data{
+                    align-items: center;
+                }
+                .fm_img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+// =====================================================================================================
+//                                 WE ARE GETTING MARRIED
+// =====================================================================================================
+    .kp3_we_are_getting_married{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #edf0e3;
+        padding: 60px 25px;
+        gap: 50px;
+
+        .kp3_timer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+
+            .box{
+                height: 200px;
+                width: 250px;
+                background-color: #fff;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h2{
+                    font-family: 'Kameron';
+                    font-weight: 400;
+                    font-size: 78px;
+                    color: #057FB1;
+                }
+                p{
+                    font-family: 'Gugi';
+                    font-weight: 400;
+                    font-size: 28px;
+                    letter-spacing: 0.2em;
+                    color: #8A9B45;
+                }
+            }
+        }
+    }
+// =====================================================================================================
+//                                 EVENTS
+// =====================================================================================================
+    .kp3_events{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+
+        padding: 45px;
+
+        .kp3_events_card_container{
+            width: 100%;
+            max-width: 1400px;
+
+            display: grid;        
+            place-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 1rem;
+
+            .kp3_event_card{
+                position: relative;
+
+                .kp3_event_card_data{
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h4{
+                        font-size: 24px;
+                        font-weight: 400;                            
+                        font-family: 'Gugi';
+                        color: #000;
+                    }
+                    p{
+                        text-align: center;
+                        color: #000;
+                        font-weight: 500;
+                        font-size: 18px;
+                        font-family: 'Rajdhani';
+                    }
+                    h6{
+                        color: #000;
+                        font-family: 'Rajdhani', sans-serif;
+                        font-size: 18px;
+                    }
+                    h5{
+                        color: #000;
+                        font-family: 'Rajdhani', sans-serif;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .kp3_events .kp3_events_card_container{
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .kp3_events .kp3_events_card_container .kp3_event_card{
+            width: 300px;
+        }
+    }
+    
+
+    
+// =====================================================================================================
+//                                 FOOTER
+// =====================================================================================================
+    .kp3_footer{
+        padding: 45px;
+        background-color: #DFF3F3;
+        background-image: url("../public/kankotri-p3-assets/footer.png");
+        background-size: 100% 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        
+        h4{
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 28px;
+            color: #8A9B45;
+        }
+        p{
+            max-width: 750px;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 24px;
+            color: #000;
+            text-align: center;
+        }
+        h5{
+            margin-top: 25px;
+            font-family: 'Gugi';
+            font-weight: 400;
+            font-size: 28px;
+            color: #057FB1;
+        }
+        .kp3_products{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+
+            a{
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 18px;
+                color: #000;
+            }
+        }
+        h6{
+            margin-top: 25px;
+            font-family: 'Gugi';
+            font-weight: 400;
+            font-size: 28px;
+            color: #057FB1;
+        }
+        .kp3_social{
+            display: flex;
+            gap: 20px;
+        }
+    }
+    @media (max-width: 410px) {
+        .kp3_footer{
+            .kp3_products{
+                flex-direction: column;
+            }
+        }
+    }
+
+    /**/
+}

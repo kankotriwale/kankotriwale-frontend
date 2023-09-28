@@ -1,0 +1,772 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Gugi&family=Inter&family=Poppins&display=swap");
+
+// font-family: 'DM Serif Display', serif;
+// font-family: 'Gugi', cursive;
+// font-family: 'Inter', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+.kankotri_p4 {
+  height: auto;
+  width: 100%;
+  min-width: 350px;
+
+  // ======================================================================================================
+  //                                     /Landing
+  // =====================================================================================================
+  
+  .landing {
+    min-height: 750px;
+    width: 100%;
+    background-image: linear-gradient(to right, #d0aed64a 65%, #c0a8bf 35%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 50px;
+
+    position: relative;
+    z-index: 9;
+
+    // -----------------------------------------------------------------------------------------
+    //                                     /Landing Left
+    // -----------------------------------------------------------------------------------------
+
+    .left {
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+        p{
+            color: #a37894;
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            max-width: 500px;
+        }
+        h1{
+            color: #583758;
+            font-family: "DM Serif Display", serif;
+            font-size: 92px;
+            font-weight: 400;
+            margin-bottom: 35px;
+            white-space: break-spaces;
+        }
+        span{
+            padding: 15px 35px;
+            color: #a37894;
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            background-color: #fff;
+        }
+    }
+
+    // -----------------------------------------------------------------------------------------
+    //                                     /Landing Right
+    // -----------------------------------------------------------------------------------------
+
+    .right {
+        height: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        .img_1_container{
+            max-height: 520px;
+            max-width: 420px;
+            position: relative;
+
+            .img_2_container{
+                position: absolute;
+                bottom: -22%;
+                left: -28%;
+                max-height: 70%;
+                max-width: 70%;
+              }
+        }
+    }
+  }
+
+  .landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    background-image: url("../public/kankotri-p4-assets/main-decoration-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  .landing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    background-image: url("../public/kankotri-p4-assets/main-decoration-2.png");
+    background-repeat: no-repeat;
+    background-size: 250px 100%;
+    background-position: right;
+    z-index: -1;
+  }
+    // -----------------------------------------------------------------------------------------
+    //                                     /Media Query
+    // -----------------------------------------------------------------------------------------
+  @media (max-width: 980px) {
+    .landing{
+        flex-direction: column;
+        padding: 150px 50px;
+
+        .right{
+            padding-left: 25%;
+        }
+    }
+  }
+
+  @media (max-width: 760px) {
+    .landing::before{
+        width: 100%;
+    }
+    .landing::after{
+        width: 0%;
+    }
+    .landing{
+        padding: 100px 25px;
+        background-image: linear-gradient(to right, #d0aed64a 100%, #c0a8bf 0%);
+        
+
+        .left{
+            h1{
+                font-size: 82px;
+            }
+        }
+        .right{
+            .img_1_container{
+                max-height: 480px;
+                max-width: 360px;
+            }
+        }
+    }
+  }
+  @media (max-width: 560px) {
+    .landing{
+        padding: 50px 25px;
+        .left{
+            p{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 52px;
+            }
+        }
+        .right{
+            padding-bottom: 60px;
+        }
+        
+    }
+  }
+  // ======================================================================================================
+  //                                     /Intro (Save the date)
+  // =====================================================================================================
+  .intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
+
+    // -----------------------------------------------------------------------------------------
+    //                                     /intro left and right
+    // -----------------------------------------------------------------------------------------
+    .left_right {
+      padding: 25px;
+    }
+
+    // -----------------------------------------------------------------------------------------
+    //                                     /intro center
+    // -----------------------------------------------------------------------------------------
+    .center {
+      padding: 100px 30px;
+      background-color: #583758;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+
+      h4 {
+        color: #c66ebc;
+        font-family: "Poppins", sans-serif;
+        font-size: 22px;
+        letter-spacing: 8px;
+        font-weight: 100;
+        text-align: center;
+      }
+      h3 {
+        color: #fbd0f5;
+        font-family: "DM Serif Display", serif;
+        font-size: 48px;
+        text-align: center;
+      }
+      p {
+        color: #c0a8bf;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        max-width: 400px;
+        text-align: center;
+      }
+      span {
+        color: #ffdfff;
+        background-color: #00000038;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        padding: 10px 25px;
+        margin-bottom: 65px;
+      }
+    }
+  }
+  .intro::before{
+    content: '';
+    position: absolute;
+    top: 250px;
+    height: 200px;
+    width: 100%;
+    // max-width: 1570px;
+    background-color: #efe4eb;
+    z-index: -1;
+  }
+  
+// -----------------------------------------------------------------------------------------
+//                                     /Media Query
+// -----------------------------------------------------------------------------------------
+  @media (max-width: 1115px) {
+    .intro {
+      padding: 40px 25px;
+      flex-direction: column;
+      align-items: center;
+      .left_right{
+        padding: 0;
+      }
+    }
+    .intro::before{
+      top: 0;
+      height: 100%;
+      width: 200px;
+    }
+  }
+  @media (max-width: 550px) {
+    .intro{
+      .center{
+        padding: 70px 20px;
+        span{
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+  // ======================================================================================================
+  //                                     /Love Story
+  // =====================================================================================================
+  .our_love_story {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+
+    background-color: #fff;
+
+    h2 {
+      color: #583758;
+      font-family: "DM Serif Display", serif;
+      font-size: 72px;
+    }
+    
+    // -----------------------------------------------------------------------------------------
+    //                                     /Love Story Slab
+    // -----------------------------------------------------------------------------------------
+    .love_story_slabs {
+      width: 100%;
+      max-width: 1570px;
+      display: flex;
+      flex-direction: column;
+
+      .slab:nth-child(even) {
+        background-position: right;
+        flex-direction: row-reverse;
+        
+        .slab_data{
+            flex-direction: row-reverse;
+            .slab_text{
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                        
+                p{
+                    text-align: end;
+                }
+            }
+        }
+      }
+      .slab {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        
+        padding: 0 50px;
+
+        background-image: url("../public/kankotri-p4-assets/love-story-vector.png");
+        background-repeat: no-repeat;
+        background-size: calc(80% - 440px) 70%;
+        background-position: left;
+
+        .slab_data{
+            min-width: calc(50% + 125px);
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .slab_text {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+    
+              h4{
+                color: #df2349;
+                font-family: "DM Serif Display", serif;
+                font-size: 26px;
+              }
+              p{
+                color: #2e524a;
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                max-width: 500px;
+                text-align: start;
+              }
+            }
+        }
+      }
+    }
+  }
+  
+// -----------------------------------------------------------------------------------------
+//                                     /Media Query
+// -----------------------------------------------------------------------------------------
+  @media (max-width: 830px) {
+    .our_love_story{
+        .love_story_slabs{
+            gap: 25px;
+        }
+    }
+  }
+  @media (max-width: 730px) {
+    .our_love_story{
+        .love_story_slabs{
+            .slab {
+                background: none;
+                .slab_data{
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+            .slab:nth-child(even) {
+                .slab_data{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+  }
+  @media (max-width: 760px) {
+    .our_love_story{
+        h2{
+            font-size: 62px;
+        }
+    }
+  }
+  @media (max-width: 660px) {
+    .our_love_story{
+        h2{
+            font-size: 42px;
+        }
+    }
+  }
+
+  // ======================================================================================================
+  //                                     /Event
+  // =====================================================================================================
+  .event {
+    padding: 0px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+    h2 {
+      color: #583758;
+      font-family: "DM Serif Display", serif;
+      font-size: 72px;
+    }
+    p {
+      color: #df2349;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    
+    // -----------------------------------------------------------------------------------------
+    //                                     /Card Conatiner
+    // -----------------------------------------------------------------------------------------
+    .card_container::-webkit-scrollbar {
+      display: none;
+    }
+    .card_container {
+      height: 650px;
+      width: 830px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      
+        // -----------------------------------------------------------------------------------------
+        //                                     /Card Container Scroable
+        // -----------------------------------------------------------------------------------------
+
+      .card_scrollable_container {
+        width: 2550px;
+        display: flex;
+        gap: 30px;
+
+        // -----------------------------------------------------------------------------------------
+        //                                     /Event Card
+        // -----------------------------------------------------------------------------------------
+        
+        .event_card {
+          height: 650px;
+          width: 400px;
+          background-image: url("../public/kankotri-p4-assets/event-card-vector.png");
+          background-size: 100% 100%;
+          position: relative;
+
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          gap: 10px;
+
+          .card_img {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          h3 {
+            font-family: "DM Serif Display", serif;
+            color: #df2349;
+            font-size: 28px;
+            text-align: center;
+          }
+          h4 {
+            color: #432d2d;
+            font-family: "Poppins", sans-serif;
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    
+    // -----------------------------------------------------------------------------------------
+    //                                     /Buttons
+    // -----------------------------------------------------------------------------------------
+    .btns {
+      display: flex;
+      gap: 10px;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+// -----------------------------------------------------------------------------------------
+//                                     /Media Query
+// -----------------------------------------------------------------------------------------
+  @media (max-width: 970px) {
+    .event{
+        .card_container{
+            width: 400px;
+        }
+    }
+  }
+  @media (max-width: 760px) {
+    .event{
+        h2{
+            font-size: 62px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .card_container{
+            height: 550px;
+            width: 320px;
+            .card_scrollable_container{
+                width: 2070px;
+                .event_card{
+                    height: 550px;
+                    width: 320px;
+                    .card_img {
+                        top: 50px;
+                    }
+                    h3{
+                        font-size: 24px;
+                    }
+                    h4{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }   
+  }
+  @media (max-width: 660px) {
+    .event{
+        h2{
+            font-size: 42px;
+        }
+    }
+  }
+
+  // ======================================================================================================
+  //                                     /Photo gallery
+  // =====================================================================================================
+
+  .photo_gallery{
+    padding: 50px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+    h2 {
+        color: #583758;
+        font-family: "DM Serif Display", serif;
+        font-size: 72px;
+      }
+
+    .gallery_container{
+        display: flex;
+        gap: 10px;
+        .column{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .viewall_btn {
+        color: #fff5fb;
+        background: #583758;
+        width: 200px;
+        height: 50px;
+  
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        outline: none;
+      }
+  
+      .carousel-control-next,
+      .carousel-control-prev {
+        background-color: #583758;
+      }
+  
+      .carousel-control-prev {
+        left: 10px;
+        width: 45px;
+        height: 45px;
+        padding: 14px;
+        margin-left: 10px;
+        border-radius: 50%;
+        transform: translateX(0);
+        justify-content: center;
+        top: 50%;
+      }
+      .carousel-control-next {
+        right: 10px;
+        left: unset;
+        width: 45px;
+        height: 45px;
+        padding: 14px;
+        margin-right: 10px;
+        border-radius: 50%;
+        transform: translateX(0);
+        justify-content: center;
+        top: 50%;
+      }
+  }
+  
+// -----------------------------------------------------------------------------------------
+//                                     /Media Query
+// -----------------------------------------------------------------------------------------
+  @media (max-width: 760px) {
+    .photo_gallery{
+        h2{
+            font-size: 62px;
+        }
+    }
+  }
+  @media (max-width: 660px) {
+    .photo_gallery{
+        h2{
+            font-size: 42px;
+        }
+    }
+  }
+
+
+  // ======================================================================================================
+  //                                     /Direction
+  // =====================================================================================================
+
+  .get_direction {
+    padding: 0px 25px;
+    padding-bottom: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+    h2 {
+      color: #583758;
+      font-family: "DM Serif Display", serif;
+      font-size: 72px;
+      text-align: center;
+    }
+  }
+
+// -----------------------------------------------------------------------------------------
+//                                     /Media Query
+// -----------------------------------------------------------------------------------------
+
+  @media (max-width: 760px) {
+    .get_direction{
+        h2{
+            font-size: 62px;
+        }
+    }
+  }
+  @media (max-width: 660px) {
+    .get_direction{
+        h2{
+            font-size: 42px;
+        }
+    }
+  }
+
+  // ======================================================================================================
+  //                                     /Footer
+  // =====================================================================================================
+  .kp3_footer {
+    padding: 45px;
+    background-color: #f7f1f5;
+    background-image: url("../public/kankotri-p4-assets/footer-banner.png");
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    h4 {
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: 28px;
+      color: #8b4373;
+    }
+    p {
+      max-width: 750px;
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 24px;
+      color: #000;
+      text-align: center;
+    }
+    h5 {
+      margin-top: 25px;
+      font-family: "Gugi";
+      font-weight: 400;
+      font-size: 28px;
+      color: #b45e9d;
+    }
+    .kp3_products {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+
+      a {
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+      }
+    }
+    h6 {
+      margin-top: 25px;
+      font-family: "Gugi";
+      font-weight: 400;
+      font-size: 28px;
+      color: #b45e9d;
+    }
+    .kp3_social {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+    .kp3_footer{
+      background-image: none;
+    }
+  }
+  @media (max-width: 410px) {
+    .kp3_footer {
+      .kp3_products {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------------------
+//                                     /
+// -----------------------------------------------------------------------------------------

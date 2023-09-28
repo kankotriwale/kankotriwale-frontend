@@ -661,8 +661,7 @@
         margin: -10px auto 30px;
     }
 }
-.gallery .carousel-control-next,.gallery .carousel-control-prev {
-   
+.gallery .carousel-control-next,.gallery .carousel-control-prev {  
     background-color: #ff8780;
 }
 .gallery .carousel-control-prev{
